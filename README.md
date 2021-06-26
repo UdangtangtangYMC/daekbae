@@ -1,6 +1,6 @@
 :gift::truck:댁배(댁까지 배송) / daekbae
 ==========================================
-<img src="https://img.shields.io/github/license/UdangtangtangYMC/daekbae"><br>
+<img src="https://img.shields.io/github/license/UdangtangtangYMC/daekbae"><br><br>
  :arrow_right: 통합 배송조회 서비스
 
 ## ● Members
