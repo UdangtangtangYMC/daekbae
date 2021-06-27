@@ -1,4 +1,4 @@
-package com.udangtangtang.daekbae;
+package com.udangtangtang.daekbae_model;
 
 public class Post {
     //운송장 번호
