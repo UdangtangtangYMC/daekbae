@@ -5,13 +5,12 @@
     android:layout_width="240dp"
     android:layout_height="match_parent"
     android:layout_gravity="right"
-    android:background="#E81C8ADB"
     android:orientation="vertical">
     <ImageButton
         android:id="@+id/close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#1C8ADB"
+        app:showAsAction="always"
         app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
         app:tint="#FFFFFF" />
 
