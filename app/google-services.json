@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69233518919",
+    "project_id": "daekbae-7229e",
+    "storage_bucket": "daekbae-7229e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69233518919:android:96fa772146b13137578462",
+        "android_client_info": {
+          "package_name": "com.udangtangtang.daekbae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69233518919-af8b68gvkk3tegc5t4313evnlli66l50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7t4AaKlWg0qSULCh7Ka_Y7Ke7Qn9GZsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69233518919-af8b68gvkk3tegc5t4313evnlli66l50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
