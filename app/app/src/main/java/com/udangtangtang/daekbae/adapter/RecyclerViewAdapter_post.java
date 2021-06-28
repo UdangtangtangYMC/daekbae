@@ -1,4 +1,4 @@
-package com.udangtangtang.daekbae_adapter;
+package com.udangtangtang.daekbae.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;

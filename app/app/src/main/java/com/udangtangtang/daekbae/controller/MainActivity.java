@@ -1,4 +1,4 @@
-package com.udangtangtang.daekbae;
+package com.udangtangtang.daekbae.controller;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,9 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.udangtangtang.daekbae.R;
+import com.udangtangtang.daekbae.controller.Input_post_dialog;
 
 public class MainActivity extends AppCompatActivity {
     private long time = 0;

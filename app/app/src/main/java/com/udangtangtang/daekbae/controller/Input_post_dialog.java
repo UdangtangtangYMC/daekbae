@@ -1,4 +1,4 @@
-package com.udangtangtang.daekbae;
+package com.udangtangtang.daekbae.controller;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -8,6 +8,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import com.udangtangtang.daekbae.R;
 
 public class Input_post_dialog {
     private Context context;
