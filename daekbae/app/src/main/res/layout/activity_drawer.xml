@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:showAsAction="always"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:gravity="start"
+        android:text="이름"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginLeft="10dp"
+        android:text="님"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="226dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="10dp"
+        android:text="안녕하세요!"
+        android:textSize="25sp" />
+
+    <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:text="로그아웃"
+        android:textSize="16dp"
+        android:background="@drawable/logout"
+        />
+
+    <TextView
+        android:layout_width="226dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="10dp"
+        android:text="로그아웃"
+        android:textSize="15sp" />
+
+
+</LinearLayout>
