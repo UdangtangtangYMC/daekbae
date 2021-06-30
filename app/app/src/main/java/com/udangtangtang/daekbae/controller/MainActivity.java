@@ -14,10 +14,19 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.udangtangtang.daekbae.R;
 import com.udangtangtang.daekbae.controller.Input_post_dialog;
 
 public class MainActivity extends AppCompatActivity {
+    //파이어베이스 연동 부분
+    private FirebaseDatabase database = FirebaseDatabase.getInstance();
+    //DatabaseReference - 데이터베이스의 특정 위치로 연결하는 거라고 생각하면 됨.
+    //현재 연결은 데이터베이스에만 딱 연결해놓고 키값(테이블또는 속성)의 위치까지는 들어가지는 않은 모습
+    private DatabaseReference databaseReference = database.getReference();
+
+
     private long time = 0;
     private DrawerLayout drawerLayout;
     private View drawerView;
@@ -26,7 +35,20 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btn_add; //이용자가 운송장번호 추가할 때 사용하는 버튼
     private TextView tv_id; //ID를 받아오기위한 속성
     private ImageButton btn_logout; //로그아웃을 위한 버튼
-    
+
+    private String[] post_company_list = {"DHL", "천일 택배", "CJ대한통운", "CU편의점택배", "GS Postbox택배",
+            "CWAY", "대신택배", "우체국 택배", "한의사랑택배", "한진택배",
+            "합동택배", "홈픽", "일양로지스", "경동택배", "로젠택배",
+            "롯데택배"};
+
+
+    private int[] post_company_imageID ={R.drawable.cheonil_post, R.drawable.cjkoreaexpress, R.drawable.cjkoreaexpress, R.drawable.cupost, R.drawable.cvsnet_post,
+            R.drawable.woori, R.drawable.daesintaegbae_post, R.drawable.post_delivery_service, R.drawable.hpl, R.drawable.hangincourier,
+            R.drawable.habdongtaegbae_post, R.drawable.homepick_post, R.drawable.ilyang_post, R.drawable.kyungdong_post, R.drawable.rosencourier,
+            R.drawable.lottecourier};
+
+    private long[] input_post_info;
+
     //새로고침 구현
     private void refreshListView(){
 
@@ -58,13 +80,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         btn_add = findViewById(R.id.btn_add);
 
         btn_add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Input_post_dialog input_post_dialog = new Input_post_dialog(MainActivity.this);
-                input_post_dialog.callFunction();
+                Input_post_dialog input_post_dialog = new Input_post_dialog(MainActivity.this, post_company_list);
+                input_post_info = input_post_dialog.callFunction();
+                if(input_post_info != null){
+                    //input_post_info[0] - 택배회사 index, input_post_info[1] - 입력한 운송장 번호
+                    //입력한 택배회사와 입력한 운송장 번호에 따른 정보를 기반으로 api 호출 및 Json으로 각각의 정보를 빼오고
+                    //이이를 기반으로 ost instance 생성
+                }
             }
         });
 
@@ -125,5 +153,10 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    //사용자가 등록한 post_list를 가져옴
+    public void getPost_list(){
+    }
+
 }
 

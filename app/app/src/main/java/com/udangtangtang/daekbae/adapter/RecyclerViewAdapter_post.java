@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.udangtangtang.daekbae.R;
-import com.udangtangtang.daekbae_model.Post;
+import com.udangtangtang.daekbae.model.Post;
 
 import java.util.ArrayList;
 import java.util.List;

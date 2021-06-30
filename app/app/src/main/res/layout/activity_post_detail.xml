@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="배송정보 조회"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#171515"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/border_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/img_consignment"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/consignment"
+                app:tint="#888885" />
+            <ImageView
+                android:id="@+id/img_delivering"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/delivering"
+                app:tint="#888885"/>
+            <ImageView
+                android:id="@+id/img_complete"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/complete"
+                app:tint="#888885"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txt_consignment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배송 출발"
+                android:layout_marginLeft="50dp"/>
+            <TextView
+                android:id="@+id/txt_delivering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배송중"
+                android:layout_marginLeft="75dp"/>
+            <TextView
+                android:id="@+id/txt_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배송 완료"
+                android:layout_marginLeft="100dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/delivery_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

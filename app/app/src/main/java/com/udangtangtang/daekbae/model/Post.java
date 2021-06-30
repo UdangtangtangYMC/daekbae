@@ -16,6 +16,8 @@ public class Post {
     //가격
     private int price;
 
+    public Post(){}
+
     public Long getNumber() {
         return number;
     }

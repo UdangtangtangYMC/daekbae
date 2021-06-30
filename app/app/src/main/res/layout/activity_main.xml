@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.udangtangtang.daekbae.MainActivity"
+    tools:context="com.udangtangtang.daekbae.controller.MainActivity"
     tools:showIn="@layout/activity_main"
     android:id="@+id/drawer_layout">
 
@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/articles_list"
+            android:id="@+id/post_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -30,7 +30,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:showAsAction="always"
-            app:srcCompat="@drawable/plus" />
+            app:srcCompat="@drawable/plus"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

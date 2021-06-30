@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "1007767647219",
-    "project_id": "daekbae-e9ae6",
-    "storage_bucket": "daekbae-e9ae6.appspot.com"
+    "project_number": "528004509037",
+    "project_id": "daekbae-d873c",
+    "storage_bucket": "daekbae-d873c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1007767647219:android:e396bb0a86b7a24aaf9886",
+        "mobilesdk_app_id": "1:528004509037:android:1fc46acaf74333bcc3fe64",
         "android_client_info": {
           "package_name": "com.udangtangtang.daekbae"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1007767647219-11pr1k7itff615etg5736s7k138nc8un.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.udangtangtang.daekbae",
-            "certificate_hash": "3837c8f4dc9776630087a433de8c1b74f0a6aed2"
-          }
-        },
-        {
-          "client_id": "1007767647219-msc6rjd27913c8u5bfb5ssv0lfporaa0.apps.googleusercontent.com",
+          "client_id": "528004509037-a4ra5feukkf4mmleosc8aehc9tv9sab5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDhhEyOP3CxnMk_yrlCsmHMu85l5AuUy50"
+          "current_key": "AIzaSyBjSlddWd2ZLG8G57wFRC0CgpnDkKXZDoc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1007767647219-msc6rjd27913c8u5bfb5ssv0lfporaa0.apps.googleusercontent.com",
+              "client_id": "528004509037-a4ra5feukkf4mmleosc8aehc9tv9sab5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
