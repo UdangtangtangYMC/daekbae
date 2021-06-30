@@ -53,9 +53,14 @@ public class SignUpActivity extends AppCompatActivity {
                                     Toast.makeText(SignUpActivity.this, "회원가입 되었습니다.", Toast.LENGTH_SHORT).show();
                                 } else {
                                     if (task.getException().toString() != null) {
-                                        Toast.makeText(SignUpActivity.this, "올바른 이메일인지 확인해주세요.", Toast.LENGTH_SHORT).show();
                                         if (password.length() < 6) {
                                             Toast.makeText(SignUpActivity.this, "6자리 이상의 비밀번호를 입력하세요.", Toast.LENGTH_SHORT).show();
+                                        }
+                                        else if (email.length()==0){
+                                            Toast.makeText(SignUpActivity.this, "이메일을 입력하세요.", Toast.LENGTH_SHORT).show();
+                                        }
+                                        else{
+                                            Toast.makeText(SignUpActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
                                         }
                                     }
                                 }
